@@ -1,0 +1,3159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2015 Tasungtai List</title>
+	<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+	<link href="jquery/Overrides.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	body,td,th {
+	font-family: Zawgyi-One;
+}
+    </style>
+	<script src="jquery/jquery.js"></script>
+	<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    
+	<script>
+		$( document ).on( "pagecreate", function() {
+			$( "#theme-selector input" ).on( "change", function( event ) {
+				var themeClass = $( "#theme-selector input:checked" ).attr( "id" );
+
+				$( "##" ).removeClass( "ui-page-theme-a ui-page-theme-b" ).addClass( "ui-page-theme-" + themeClass );
+				$( "#ui-body-test" ).removeClass( "ui-body-a ui-body-b" ).addClass( "ui-body-" + themeClass );
+				$( "#ui-bar-test, #ui-bar-form" ).removeClass( "ui-bar-a ui-bar-b" ).addClass( "ui-bar-" + themeClass );
+				$( ".ui-collapsible-content" ).removeClass( "ui-body-a ui-body-b" ).addClass( "ui-body-" + themeClass );
+				$( ".theme" ).text( themeClass );
+			});
+			$( "#opt-shadow input" ).on( "change", function( event ) {
+				if ( $( "#on" ).prop( "checked" ) ) {
+					$( "##" ).removeClass( "noshadow" );
+				} else if ( $( "#off" ).prop( "checked" ) ) {
+					$( "##" ).addClass( "noshadow" );
+				}
+			});
+			$( "#opt-navbars input" ).on( "change", function( event ) {
+				if ( $( "#show" ).prop( "checked" ) ) {
+					$( "## .ui-navbar" ).show();
+					$( "## .ui-footer h4" ).hide();
+				} else if ( $( "#hide" ).prop( "checked" ) ) {
+					$( "## .ui-navbar" ).hide();
+					$( "## .ui-footer h4" ).show();
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div data-role="page" id="page1">
+<div data-role="header">
+<h1>Home Page</h1>
+<a href="#about_us" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-user ui-nodisc-icon ui-alt-icon ui-btn-right">About Us</a>
+  </div>
+<div class="ui-content">
+    <div id="main_btn"><p><a href="#panel-push"><img src="images/2015 icon logo.png" width="" height=""  alt=""/></a></p></div>
+</div>
+
+  <div data-role="panel" id="panel-push" data-display="push">
+    <ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close" >Close</a></li>
+			<li><a href="#page2" >၁၈ ရက္ည မီးပံုးပ်ံစာရင္​း</a></li>
+			<li><a href="#19_night">၁၉ ရက္ည မီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#20_night">၂၀ ရက္ည မီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#21_night">၂၁ ရက္ည မီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#22_night">၂၂ ရက္ညမီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#23_night">၂၃ ရက္ညမီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#24_night">၂၄ ရက္ည မီးပံုးပ်ံစာရင္း</a></li>
+			<li><a href="#25_night">၂၅ ရက္ည မီးပံုးပ်ံစာရင္း</a></li>
+     <li><a href="#26_night">၂၆ ရက္ညမီးပံုးပ်ံစာရင္း</a></li>
+</ul>
+  </div>
+</div>
+
+<div data-role="page" id="page2">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၁၈ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ OPPO</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">OPPO</td>
+	<td>စိန္နားပန္</td>
+	<td>ေက်ာ္ျမင့္ (စံျပ)</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ တိုးတက္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">တိုးတက္</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ေအာင္ျပည္ၿဖိဳး</td>
+                  <td>ေနာင္အင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ တိမ္လႊာ၀တ္မႈံ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">တိမ္လႊာ၀တ္မံႈ</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ေဇာ္လင္းထက္ + ေက်ာ္ဦး</td>
+                  <td>ေရႊေတာင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible">
+	<h3>၄။ ၀င္ရိုး</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">၀င္ရိုး</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေအာင္ၿဖိဳးေ၀</td>
+                  <td>ေအးသာယာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၅။ ေက်ာ္ၾကား</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေက်ာ္ၾကား</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေတဇာမင္းလြင္ + လင္းေအာင္္</td>
+	<td>ကံႀကီး</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ တခဲဥ္းေထာင္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">တခဲဥ္းေထာင္း</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ခြန္ထြန္းေအာင္ + လင္းေအာင္</td>
+                  <td>ေညာင္ျဖဴ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ရြက္လွ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ရြက္လွ</td>
+	<td>ညမီးႀကီး</td>
+	<td>၀င္းေအာင္</td>
+	<td>မဂၤလာဦး</td>
+	<td>၂၄</td>
+	<td>၂၃</td>
+	<td>၇-၁၀</td>
+	<td>၆-၁၀</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၈။ ၿမိဳ႕ျပ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ၿမိဳ႕ျပ</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေက်ာ္စိုးလြင္</td>
+                  <td>ေအးသာယာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၉။ ကြမ္းေလး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ကြမ္းေလး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဇာ္မ်ိဳးႏိုင္ + ေအာင္စိုးလင္း</td>
+	<td>ကန္ေရွ႕</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ သုခ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">သုခ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ဘိုျမင့္ရွိန္</td>
+	<td>အေရွ႕စည္ပင္</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ခ်ာေပး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ခ်ာေပး</td>
+	<td>ညမီးႀကီး</td>
+	<td>မ်ိဳးလြင္ဦး</td>
+	<td>ဘုရားျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+     	 <div data-role="collapsible">
+	<h3>၁၂။ ဒ႔ိုေခတ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဒို႔ေခတ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ကီးလ်ပ္</td>
+	<td>ဘုရားျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+
+                  
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="19_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၁၉ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+      <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ ဘန္ေကာက္ေဆးရုံ သုခလူငယ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဘန္ေကာက္ေဆးရံု</td>
+	<td>စိန္နားပန္</td>
+	<td>ထက္ထက္ (ခ) ငတက္</td>
+	<td>ေရႊေတာင္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ ႏွင္းစက္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ႏွင္းစက္</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ေအာင္သန္းထိုက္</td>
+                  <td>ရတနာသီရိ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ ေရႊသီး</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေရႊသီး</td>
+                  <td>စိန္နားပန္</td>
+                  <td>၀င္းလြင္</td>
+                  <td>မံုတ၀</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible">
+	<h3>၄။ ရသ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ရသ</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>စိုးသူ၀င္း</td>
+                  <td>ေက်ာင္းႀကီးစု</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၅။ စြဲညိဳ႕</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">စြဲညိဳ႕</td>
+	<td>ညမီးႀကီး</td>
+	<td>စည္သူ</td>
+	<td>ဘုရားျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ ပမ္တိုင္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ပမ္တိုင္း</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေစာရန္ပိုင္ + သားငယ္</td>
+                  <td>ေက်ာင္းႀကီးစု</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ လူခန္႔ Royal Canna</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">လူခန္႔ Royal Canna</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေတဇာဦး</td>
+	<td>ဘုရားျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+     	 <div data-role="collapsible" >
+	<h3>၈။ ရွမ္းပဲပုတ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ရွမ္းပဲပုတ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုင္းေက်ာ္စိန္္</td>
+	<td>ဦးႀကီးခမ္း</td>
+	<td>၂၀၀၅</td>
+	<td>၂၄</td>
+	<td>၂၄</td>
+	<td>၇-၆</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+    <div data-role="collapsible">
+	<h3>၉။ ခမ္;ေရာင္းစြမ္;</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ခမ္;ေရာင္းစြမ္;</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေအာင္ဇင္၀င္း</td>
+                  <td>နမ္းဟူး</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ေႏြးဒီး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေႏြးဒီး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ေက်ာ္ေမာ္</td>
+	<td>ေညာင္ျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ေမွာ္၀င္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေမွာ္၀င္</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုးေဇာ္ေဇာ္</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ ေဗာလဲ့</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေဗာလဲ့</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေအာင္သူ</td>
+	<td>ေညာင္ျဖဴ</td>
+	<td>၂၀၀၉</td>
+	<td>၂၄</td>
+	<td>၂၃-၆</td>
+	<td>၇-၆</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="20_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၀ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ အားမာန္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">အားမာန္</td>
+	<td>စိန္နားပန္</td>
+	<td>ရာဇာလင္းထက္</td>
+	<td>ကံသာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ ၀မ္းတူး</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">၀မ္းတူး</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ဟန္ထြန္းလင္း</td>
+                  <td>ခ်မ္းျမ</td>
+                  <td>၂၀၁၅</td>
+                  <td>၁၈</td>
+                  <td>၁၈</td>
+                  <td>၅-၆</td>
+                  <td>၅-၆</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ SOLO COLLECTION</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">SOLO COLLECTION</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ႏိူင္းႏိူင္းထက္</td>
+                  <td>ရတနာသီရိ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible">
+	<h3>၄။ ဖိုး၀</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ဖိုး၀</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေမာင္သန္းျမင့္</td>
+                  <td>မဂၤလာဦး</td>
+                  <td>၂၄</td>
+                  <td>၂၃</td>
+                  <td>၇-၁၀</td>
+                  <td>၆-၁၀</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၅။ ေရႊပု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေရႊပု</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေမာင္သိန္ေငြ (ခ) သားပု</td>
+	<td>ေရေအးကြင္း</td>
+	<td>၂၀၁၄</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ ထင္းထို
+	  </h3><div data-demo-html="true" data-demo-css="true">
+	    <table data-role="table">
+            <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ထင္းထို</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေမာင္ေမာင္လတ္</td>
+                  <td>ေစ်းပိုင္း</td>
+                  <td>၂၀၁၅</td>
+                  <td>၂၄</td>
+                  <td>၂၃-၆</td>
+                  <td>၇-၆</td>
+                  <td>၇</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ဓါတ္လုံး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဓါတ္လုံး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေက်ာ္စုိးလြင္</td>
+	<td>စိန္ပန္း</td>
+	<td>၂၀၁၅</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+     	 <div data-role="collapsible" >
+	<h3>၈။ D-16</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">D-16</td>
+	<td>ညမီးႀကီး</td>
+	<td>မ်ိဳး၀င္းညႊန္႔ + ၿပံဳးေမာင္ေမာင္</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+    <div data-role="collapsible">
+	<h3>၉။ ၀ါးစိမ္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">၀ါးစိမ္း</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ထက္ေနာင္စိုး</td>
+                  <td>ေက်ာင္းႀကီးစု</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ေကာင္ခြန္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေကာင္ခြန္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ေအာင္မင္းသိန္း + ငဲငယ္</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ေတာ့လူခဲ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေတာ့လူခဲ</td>
+	<td>ညမီးႀကီး</td>
+	<td>၀င္းျမင့္ျမင့္ + ညီညီထူး</td>
+	<td>ကန္ေအာက္</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ ဘုံေပ်ာ္ေလေပြ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဘုံေပ်ာ္ေလေပြ</td>
+	<td>ညမီးႀကီး</td>
+	<td>တင္ေဇာ္ဦး</td>
+	<td>စက္မွဳဇုန္</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="21_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">21 ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+      <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ ေပတီး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေပတီး</td>
+	<td>စိန္နားပန္</td>
+	<td>ေအာင္မိုး + ညီရိုး</td>
+	<td>ရတနာသီရိ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ လမ္းျပၾကယ္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">လမ္းျပၾကယ္</td>
+                  <td>စိန္နားပန္</td>
+                  <td>သီဟေခ်ာ (ခ)ငဲနီ</td>
+                  <td>ေဟာ္ကုန္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ စိမ္းလဲ့ကန္သာ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">စိမ္းလဲ့ကန္သာ</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ၿဖိဳးခ်စ္</td>
+                  <td>ကန္သာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ ေျမာက္ပိုင္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေျမာက္ပိုင္း</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ႏိူင္းႏိူင္းထက္</td>
+                  <td>ရတနာသီရိ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၅။ ၾကယ္ေျပာင္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ၾကယ္ေျပာင္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေအာင္မိုးေထြး</td>
+	<td>ကန္သာ</td>
+	<td>၂၀၁၀</td>
+	<td>၂၅-၆</td>
+	<td>၂၄-၆</td>
+	<td>၈</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ လေရာင္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">လေရာင္</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေက်ာ္သီဟေအာင္</td>
+                  <td>ျပည္ေတာ္သာ</td>
+                  <td>၂၀၁၄</td>
+                  <td>၂၄</td>
+                  <td>၂၂-၁၀</td>
+                  <td>၈</td>
+                  <td>၆-၈</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ေရႊေမာ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေရႊေမာ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုးျမတ္</td>
+	<td>ေရႊေတာင္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ <div data-role="collapsible" >
+    	<h3>၈။ ရာစု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+      <table data-role="table">
+        <thead>
+          <tr>
+            <th style="width:40%">မီးနာမည္</th>
+            <th>အမ်ိဳးအစား</th>
+            <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+            <th>ရပ္ကြက္</th>
+            <th>စတင္သည့္ ခုႏွစ္</th>
+            <th>ေခါင္ အခ်င္း</th>
+            <th>နံေထာင္</th>
+            <th>မီးစာ</th>
+            <th>ဒြါရ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">ရာစု</td>
+            <td>ညမီးႀကီး</td>
+            <td>ေမာင္ခိုင္</td>
+            <td>ေက်ာင္းႀကီးစု</td>
+            <td>၂၀၁၂</td>
+            <td>၂၄</td>
+            <td>၂၃</td>
+            <td>၇.၁၀</td>
+            <td>၇</td>
+          </tr>
+        </tbody>
+      </table>
+    </div></div>
+    <div data-role="collapsible">
+	<h3>၉။ ပြဲဲစားအို</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ပြဲစားအို</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေဇာ္ေဇာ္ + သန္းထြန္းဦး(ဂဲဂဲ)</td>
+                  <td>ေရေအးကြင္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ပဲပိုးတီ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ပဲပုိးတီ</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုးႏိုင္ေထြး + ၀ဏၰၰ</td>
+	<td>ျပည္ေတာ္သာ</td>
+	<td>၂၀၁၅</td>
+	<td>၂၅</td>
+	<td>၂၄</td>
+	<td>၇</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ဓေလ့</h3>
+    <div data-demo-html="true" data-demo-css="true">
+      <table data-role="table">
+        <thead>
+          <tr>
+            <th style="width:40%">မီးနာမည္</th>
+            <th>အမ်ိဳးအစား</th>
+            <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+            <th>ရပ္ကြက္</th>
+            <th>စတင္သည့္ ခုႏွစ္</th>
+            <th>ေခါင္ အခ်င္း</th>
+            <th>နံေထာင္</th>
+            <th>မီးစာ</th>
+            <th>ဒြါရ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">ဓေလ့</td>
+            <td>ညမီးႀကီး</td>
+            <td>ထူးခန္႔ၿဖိဳး</td>
+            <td>ခ်မ္းသာ</td>
+            <td>၂၀၀၆</td>
+            <td>၂၅</td>
+            <td>၂၈.၈</td>
+            <td>၈</td>
+            <td>၇</td>
+          </tr>
+        </tbody>
+      </table>
+    </div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ ေကာင္တန္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေကာင္တန္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ဇင္လင္းကို</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ တက္သစ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">တက္သစ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဇယ်ာဦး</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="22_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၂ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ အင္းေလးခ်စ္သူ Travel</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">အင္းေလးခ်စ္သူ Travel</td>
+	<td>စိန္နားပန္</td>
+	<td>ကိုေက်ာ္ဦး</td>
+	<td>ေရႊေတာင္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ -</h3>
+	<div data-demo-html="true" data-demo-css="true"> </div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ လင္းယုန္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">လင္းယုန္</td>
+                  <td>စိန္နားပန္</td>
+                  <td>အုန္းလြင္</td>
+                  <td>ေအးသာယာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ Blue Mountain</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">Blue Mountain</td>
+                  <td>စိန္နားပန္</td>
+                  <td>၀င္းျမင့္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၅။ ေကတု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေကတု</td>
+	<td>ညမီးႀကီး</td>
+	<td>စည္သူေနာင္ေနာင္</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ အိုဇုန္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">အိုဇုန္း</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ဥာဏ္လင္း (ခ) စိုင္းေအာင္</td>
+                  <td>ေညာင္ျဖဴစခန္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ဟုတ္က့ဲ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဟုတ္က့ဲ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေအာင္ထြန္းဦး</td>
+	<td>မဂၤလာဦး</td>
+	<td>၂၀၁၄</td>
+	<td>၂၄</td>
+	<td>၂၃</td>
+	<td>၇.၁၀</td>
+	<td>၆.၁၀</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+     <div data-role="collapsible" >
+    <h3>၈။ ေရႊေတာင္ရိုး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေရႊေတာင္ရိုး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခင္ေမာင္ခ်စ္</td>
+	<td>ေရေအးကြင္း</td>
+	<td>၁၉၈၃</td>
+	<td>၂၅</td>
+	<td>၂၄</td>
+	<td>၈.၄</td>
+	<td>၇.၆</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၉။ မုိင္းပြန္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">မိုင္းပြန္</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေက်ာ္မင္းသိန္း</td>
+                  <td>ေရေအးကြင္း</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ဂုရု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဂုရု</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေသာ္တာ၀င္း</td>
+	<td>ကံေအာက္</td>
+	<td>၂၀၁၂</td>
+	<td>၂၄</td>
+	<td>၂၃</td>
+	<td>၇.၁၀</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ လူကဲ (ခ) လုိကုိင္း</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">လူကဲ (ခ) လိုကိုင္း</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ေအာင္ဆုျမတ္</td>
+	<td>ကံႀကီး</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ All OK</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">All OK</td>
+	<td>ညမီးႀကီး</td>
+	<td>သားႀကီး(ခ)ကိုထက္</td>
+	<td>ေညာင္ျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ တိမ္တိုက္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">တိမ္တိုက္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေမာင္ေမာင္ေအး(ခ)ေဇာ္မင္း</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="23_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၃ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ အယ္ေပ်ာ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">အယ္ေပ်ာ္</td>
+	<td>စိန္နားပန္</td>
+	<td>မ်ိဳး၀င္းေနာင္</td>
+	<td>ကန္ေရွ႕</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ ကႀကိဳး</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ကႀကိဳး</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ေအာင္ႏိုင္ဦး</td>
+                  <td>ေအးသာယာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ ေမတၱာ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေမတၱာ</td>
+                  <td>စိန္နားပန္</td>
+                  <td>စေနထြန္း</td>
+                  <td>ကံသာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ Fujiyama Restaurant</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">Fujiyama Restaurant</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ႏူိင္းႏူိင္းထက္</td>
+                  <td>ရတနာသီရိ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၅။ လွ်ံထူးေအာင္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">လွ်ံထူးေအာင္</td>
+	<td>စိန္နားပန္</td>
+	<td>ထြန္းထြန္းႏိုင္</td>
+	<td>ေစ်းပိုင္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ တိမ္ယံ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">တိမ္ယံ</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>စိုင္းေအာင္ၿဖိဳး</td>
+                  <td>စိန္ပန္း</td>
+                  <td>၁၉၉၆</td>
+                  <td>၂၅</td>
+                  <td>၂၄</td>
+                  <td>၇.၁၀</td>
+                  <td>၇</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ပ်ံလႊား</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ပ်ံလႊား</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဌးျမင့္+သိန္းထြန္း</td>
+	<td>ခ်မ္းသာ</td>
+	<td>၁၉၈၃</td>
+	<td>၂၄.၈</td>
+	<td>၂၃</td>
+	<td>၇.၅</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၈။ ထီဖြိဳင္း (ခ) ေရအိုးလူငယ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ထီဖြိဳင္း (ခ) ေရအိုးလူငယ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ေအာင္ေက်ာ္</td>
+	<td>ထီသိမ္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၉။ ဂီတလူငယ္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                  <th>ဒြါရ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ဂီတလူငယ္</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>စိုးႏိုင္ေထြး+ေဇာ္မ်ိဳးေထြး</td>
+                  <td>ျပည္ေတာ္သာ</td>
+                  <td>၂၀၁၅</td>
+                  <td>၂၅</td>
+                  <td>၂၄</td>
+                  <td>၈</td>
+                  <td>၇</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ဓါတ္ခဲ (၁)</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဓါတ္ခဲ (၁)</td>
+	<td>ညမီးႀကီး</td>
+	<td>မ်ိဳးသန္႔ (ခ) ဒီလုံး</td>
+	<td>မဂၤလာဦး</td>
+	<td>၁၉၉၉</td>
+	<td>၂၄</td>
+	<td>၂၃.၆</td>
+	<td>၇.၆</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ေအာင္ဆု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဘုရားျဖဴ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေနလင္းၿငိမ္း</td>
+	<td>ေညာင္ျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ ေတာ္၀င္ခြာညိဳ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေတာ္၀င္ခြာညိဳ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ကိုမိုး + ဇူးဇူး</td>
+	<td>ျပည္ေတာ္သာ</td>
+	<td>၂၀၀၀</td>
+	<td>၂၄</td>
+	<td>၂၂.၁၀</td>
+	<td>၈</td>
+	<td>၆.၈</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ ရႆ၀တီ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+      <table data-role="table">
+        <thead>
+          <tr>
+            <th style="width:40%">မီးနာမည္</th>
+            <th>အမ်ိဳးအစား</th>
+            <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+            <th>ရပ္ကြက္</th>
+            <th>စတင္သည့္ ခုႏွစ္</th>
+            <th>ေခါင္ အခ်င္း</th>
+            <th>နံေထာင္</th>
+            <th>မီးစာ</th>
+            <th>ဒြါရ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">ရႆ၀တီ</td>
+            <td>ညမီးႀကီး</td>
+            <td>ေနမင္းထြန္း</td>
+            <td>ရပ္ေစာက္</td>
+            <td>၂၀၁၄</td>
+            <td>၂၄</td>
+            <td>၂၃</td>
+            <td>၈</td>
+            <td>၇</td>
+          </tr>
+        </tbody>
+      </table>
+    </div></div>  
+     	 <div data-role="collapsible">
+	<h3>၁၄။ အယ္ရိုး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">အယ္ရိုး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေက်ာ္ဟန္၀င္း</td>
+	<td>မိုင္းေသာက္</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="24_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၄ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ ေနၾကာေစ့</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေနၾကာေစ့</td>
+	<td>စိန္နားပန္</td>
+	<td>ကိုသဲဦး</td>
+	<td>ခ်မ္းျမသာစည္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ High Fly Production</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                  <th>စတင္သည့္ ခုႏွစ္</th>
+                  <th>ေခါင္ အခ်င္း</th>
+                  <th>နံေထာင္</th>
+                  <th>မီးစာ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">High Fly Production</td>
+                  <td>စိန္နားပန္</td>
+                  <td>အယ္ျပဴး(ခ)တင္ကိုဦး</td>
+                  <td>ခ်မ္းျမသာစည္</td>
+                  <td>၂၀၁၅</td>
+                  <td>၁၈</td>
+                  <td>၁၈</td>
+                  <td>၅.၆</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ Victory MM Group</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">Victory MM Group</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ခြန္မ်ိဳးခ်စ္+ခြန္ကိုကိုး</td>
+                  <td>ေအးသာယာ</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ ပတၱျမား FM</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ပတၱျမား FM</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ကိုေက်ာ္ေထြး</td>
+                  <td>ေရႊေတာင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၅။ ဒိန္ခ်ဥ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဒိန္ခ်ဥ္</td>
+	<td>စိန္နားပန္</td>
+	<td>ကိုသီဟ</td>
+	<td>ေရႊေတာင္</td>
+	<td>၂၀၁၄</td>
+	<td>၁၈</td>
+	<td>၁၈</td>
+	<td>၅.၆</td>
+	<td>၅.၆</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ ေရာင္စဥ္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေရာင္စဥ္</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ထြန္လင္းေအာင္</td>
+                  <td>ေညာင္ေရႊေဟာ္ကုန္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ထူးရွား</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ထူးရွား</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဇာ္ေဇာ္ထြန္း</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၈။ နတ္ပန္း</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">နတ္ပန္း</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ႀကီး+ခြန္ငယ္</td>
+	<td>ၿမိဳ႕မ</td>
+	<td>၁၉၉၃</td>
+	<td>၂၈.၆</td>
+	<td>၂၅.၆</td>
+	<td>၈.၄</td>
+	<td>၄</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၉။ ရန္ႀကီးေအာင္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ရန္ႀကီးေအာင္</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေမာင္တင့္ေဇာ္ဦး</td>
+                  <td>စက္မႈဇုန္</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ သုဓႏု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">သုဓႏု</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဇာ္ျမတ္သင္း + ျမတ္သင္းေမႊး</td>
+	<td>ေညာင္ျဖဴစခန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ သုတ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">သုတ</td>
+	<td>ညမီးႀကီး</td>
+	<td>မ်ိဳးမင္းေအာင</td>
+	<td>စိန္ပန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ မဂၤလာ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">မဂၤလာ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေက်ာ္ဦး</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ ႏွင္းခြဲ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ႏွင္းခြဲ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေအာင္ေက်ာ္ထြန္း + အရူး</td>
+	<td>ေရေအးကြင္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+     	 <div data-role="collapsible">
+	<h3>၁၄။ ေရႊေဘာ္အျဖဴေရာင္ပရဟိတ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေရႊေဘာ္အျဖဴေရာင္ပရဟိတ</td>
+	<td>ညမီးႀကီး</td>
+	<td>သိန္းဟန္+ေဌးေအာင္</td>
+	<td>ကန္ေအာက္</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+     	 <div data-role="collapsible">
+	<h3>၁၅။ လရိပ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">လရိပ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ယဥ္ေထြး(ခ)ဖိုးတရုပ္</td>
+	<td>ေရႊေတာင္</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="25_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၅ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ KENBO</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">KENBO</td>
+	<td>စိန္နားပန္</td>
+	<td>ေက်ာ္ျမင့္(စံျပ)+ ခြန္ကိုးကိုး</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	<td>၁၉၉၅</td>
+	<td>၁၈</td>
+	<td>၁၈</td>
+	<td>၅´၆´´</td>
+	<td>၅´၆´´</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ KBZ FC FANS GROUP</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">KBZ FC FANS GROUP</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ေအာင္ၿဖိဳးထူး</td>
+                  <td>ေက်ာင္းႀကီးစု</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ MAI</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">MAI</td>
+                  <td>စိန္နားပန္</td>
+                  <td>၀င္းႏိုင္</td>
+                  <td>KBZ Bank</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ ရန္ေက်ာ္အဆစ္အျမစ္ ေသာက္ေဆး</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ရန္ေက်ာ္အဆစ္အျမစ္ေသာက္ေဆး</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ကိုေက်ာ္ေထြး</td>
+                  <td>ေရႊေတာင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၅။ Oki ဆပ္ျပာ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">Oki ဆပ္ျပာ</td>
+	<td>စိန္နားပန္</td>
+	<td>မ်ိဳးခ်စ္</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ ေဆာင္ခ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေဆာင္းခ</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေက်ာ္သူ(ခ)ေက်ာ္ထြန္း</td>
+                  <td>ေရႊေတာင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ ဟာသေသြးသစ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဟာသေသြးသစ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုင္းေအာင္ကိုထြန္း</td>
+	<td>ၿမိဳ႕မ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+     	 <div data-role="collapsible" >
+	<h3>၈။မာဃျမင့္လွ်ပ္စစ္Company</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">မာဃျမင့္လွ်ပ္စစ္ Company</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေဇာ္ေဇာ္သန္႔</td>
+	<td>စက္မႈဇုန္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၉။ KBZ GROUP</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">KBZ GROUP</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ေမာင္ေမာင္ျမင့္+တူးငယ္</td>
+                  <td>ေရေအးကြင္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ အာယု</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">အာယု</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေအာင္ကိုထက္</td>
+	<td>ရတနာသီရိ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ KENBO</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">KENBO</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေက်ာ္စိုးလြင္</td>
+	<td>စိန္ပန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+     	 <div data-role="collapsible">
+	<h3>၁၂။ ၀တိ ံ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">၀တိ ံ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေ၀ယံမင္း</td>
+	<td>ျပည္ေတာ္သာ</td>
+	<td>၂၀၁၄</td>
+	<td>၂၄</td>
+	<td>၂၂-၁၀</td>
+	<td>၈</td>
+	<td>၆-၈</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ လင္းလက္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">လင္းလက္</td>
+	<td>ညမီးႀကီး</td>
+	<td>သန္႔ဇင္</td>
+	<td>စိန္ပန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+     	 <div data-role="collapsible">
+	<h3>၁၄။ မိုးယံ (ခ) ေရွ႕သို႔လူငယ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">မိုးယံ (ခ) ေရွ႕သို႔လူငယ္</td>
+	<td>ညမီးႀကီး</td>
+	<td>သန္႔ဇင္ဦး (ခ) ဖိုးလုံး</td>
+	<td>ခ်မ္းသာ</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+     	 <div data-role="collapsible">
+	<h3>၁၅။ ခိူ၀္းခမ္း</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ခိူ၀္းခမ္း</td>
+	<td>ညမီးႀကီး</td>
+	<td>စိုင္းေကာင္းမိုင္း</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+   <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁၆။ ကေမၻာဇဘိလပ္ေျမ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ကေမၻာဇ ဘိလပ္ေျမ</td>
+	<td>စိန္နားပန္္</td>
+	<td>ေက်ာ္စိုးလြင္</td>
+	<td>စိန္ပန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="26_night">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">၂၆ ရက္ေန႔ည မီးပံုးပ်ံစာရင္း</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+
+  </div>
+  <div data-role="content">
+    <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+	 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၁။ ခမ္းညာ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ခမ္းညာ</td>
+	<td>စိန္နားပန္</td>
+	<td>ခြန္ဘုန္းေက်ာ္</td>
+	<td>ေက်ာင္းႀကီးစု</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+
+ 	 <div data-role="collapsible"  data-theme="a" data-content-theme="a">
+	<h3>၂။ Air KBZ</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">Air KBZ</td>
+                  <td>စိန္နားပန္</td>
+                  <td>သူရေစာသိန္း + ကိုတူးငယ္</td>
+                  <td>KBZ Bank</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၃။ ေတာင္ႀကီးတကၠသိုလ္</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေတာင္ႀကီးတကၠသိုလ္</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ဦးေက်ာ္ေက်ာ္+ဦးျမင့္သူ</td>
+                  <td>ခ်မ္းျမသာစည္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၄။ ေရႊဓႏု</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေရႊဓႏု</td>
+                  <td>စိန္နားပန္</td>
+                  <td>ကိုေက်ာ္ေထြး</td>
+                  <td>ေရႊေတာင္</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h3>၅။ မီးအိမ္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">မီးအိမ္</td>
+	<td>စိန္နားပန္</td>
+	<td>ကိုလွိဳင္မိုး</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၆။ အေမထြားပဲဆီသန္႔</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">အေမထြားပဲဆီသန္႔</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>တင္ထြန္းေအာင္</td>
+                  <td>မဂၤလာဦး</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+ 	 <div data-role="collapsible" >
+	<h3>၇။ မာဃလုလင္</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">မာဃလုလင္</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေမာင္သန္းစိုး+ဗိုလ္၀င္း</td>
+	<td>ေအးသာယာ</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+    <div data-role="collapsible">
+	<h3>၉။ KBZ BANK</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">KBZ Bank</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ဦး၀င္းႏိုင္ + ေက်ာ္ျမင့္(ဘဏ္)</td>
+                  <td>ေရေအးကြင္း</td>
+                </tr>
+              </tbody>
+      </table></div></div>
+                <div data-role="collapsible">
+	<h3>၉။ ေတာင္ပိုင္း</h3>
+	<div data-demo-html="true" data-demo-css="true">
+
+            <table data-role="table">
+              <thead>
+                <tr>
+                  <th style="width:40%">မီးနာမည္</th>
+                  <th>အမ်ိဳးအစား</th>
+                  <th>အဖြဲ႔ေခါင္းေဆာင္</th>
+                  <th>ရပ္ကြက္</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="title">ေတာင္ပိုင္း</td>
+                  <td>ညမီးႀကီး</td>
+                  <td>ခ်စ္ညီညီ</td>
+                  <td>ေက်ာင္းႀကီးစု</td>
+                </tr>
+              </tbody>
+            </table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၀။ ေရႊအင္းသား</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေရႊအင္းသား</td>
+	<td>ညမီးႀကီး</td>
+	<td>ဦးေက်ာ္၀င္း</td>
+	<td>ကန္ေအာက္</td>
+	</tr>
+	</tbody>
+	</table></div></div>
+ 	 <div data-role="collapsible">
+	<h3>၁၁။ ဓါတ္ခဲ (၂)</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>စတင္သည့္ ခုႏွစ္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ဓါတ္ခဲ (၂)<br></td>
+	<td>ညမီးႀကီး</td>
+	<td>ဒီလုံး (ခ) မ်ိဳးသန္႔</td>
+	<td>မဂၤလာဦး</td>
+	<td>၁၉၉၉</td>
+	<td>၂၄</td>
+	<td>၂၃.၆</td>
+	<td>၇.၆</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၂။ ေျမာင္ႀကီး</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ေျမာင္ႀကီး</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခင္ေအာင္ေထြး</td>
+	<td>မုိင္းေသာက္</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+ 	 <div data-role="collapsible">
+	<h3>၁၃။ ၀ိဇၨာ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	<th>ေခါင္ အခ်င္း</th>
+	<th>နံေထာင္</th>
+	<th>မီးစာ</th>
+	<th>ဒြါရ</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">၀ိဇၨာ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ၿဖိဳးမင္းသန္႔</td>
+	<td>မဂၤလာဦး</td>
+	<td>၂၄</td>
+	<td>၂၃.၆</td>
+	<td>၇.၆</td>
+	<td>၇</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+     	 <div data-role="collapsible">
+	<h3>၁၄။ ပအို၀္းပညာေရး Foundation</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ပအို၀္းပညာေရး Foundation</td>
+	<td>ညမီးႀကီး</td>
+	<td>ခြန္ဗိုလ္ျပည့္စံု+ ခြန္ေအာင္ေက်ာ္</td>
+	<td>ေညာင္ျဖဴ</td>
+	</tr>
+	</tbody>
+	</table></div></div> 
+     	 <div data-role="collapsible">
+	<h3>၁၅။ ရိုးမ</h3>
+    <div data-demo-html="true" data-demo-css="true">
+	<table data-role="table">
+	<thead>
+	<tr>
+	<th style="width:40%">မီးနာမည္</th>
+	<th>အမ်ိဳးအစား</th>
+	<th>အဖြဲ႔ေခါင္းေဆာင္</th>
+	<th>ရပ္ကြက္</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td class="title">ရိုးမ</td>
+	<td>ညမီးႀကီး</td>
+	<td>ေက်ာ္သီဟ+ ေက်ာ္လင္းေမာင္</td>
+	<td>စ၀္စံထြန္း</td>
+	</tr>
+	</tbody>
+	</table></div></div>  
+  
+                   
+</div>
+</div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="rule">
+  <div data-role="header" class="jqm-header">
+    <h2 align="center">အမွတ္ေပးစည္းကမ္းမ်ား</h2>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a></div>
+  
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul><li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+        </ul>
+		</div>
+		<h4 style="display:none;">Footer</h4></div></div>
+        
+<div data-role="page" id="about_us">
+<div data-role="header">
+    <h1> About Us</h1>
+    <a href="#page1" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-home ui-nodisc-icon ui-alt-icon ui-btn-list"></a>
+  </div>
+  <div data-role="content">
+      <h4 align="center"> Developed by အံ့ထူးပိုင္  </h4>
+      <h4 align="center">Credit</h4>
+    <p align="center"> - - - - - - - - - - - - - - - - - -</p>
+      <p align="center">ပြဲစဥ္ဇယားအၾကမ္း - စိုင္းေအာင္မ်ိုဳး</p>
+      <p align="center">မီးပုံးပ်ံ အေသးစိတ္အခ်က္အလက္မ်ား - ဆက္ေမာ္</p>
+      <p align="center">Photography - High Fly Production      </p>
+      <p align="center">Online Uploading - စိုင္းရန္ေနာင္      </p>
+      <p align="center">-------။-------</p>
+      <h4 align="center">--Testers--</h4>
+      <h4 align="center"> Mino, စိုင္းရန္ေနာင္, ဆက္ေမာ္, Tun Linn Paing, Sai Myat Aye &amp; many other of my friends.. :)</h4>
+      <p align="center">...: Contact Us on Facebook :...</p>
+    <div id="abt_body" class="ui-bar ui-bar-a ui-corner-all" style="margin-bottom: 1em; text-align: center;">
+      <p><a href="https:/m.facebook.com/tazaungdinepage/">ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား Page</a></p>
+      <p><a href="https:/m.facebook.com/group/tasungtailovers">ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား Group</a> </p>
+      <p><a href="https://m.facebook.com/%E1%80%B1%E1%80%90%E1%80%AC%E1%80%84%E1%80%B9%E1%82%80%E1%80%80%E1%80%AE%E1%80%B8%E1%81%BF%E1%80%99%E1%80%AD%E1%80%B3%E1%82%95%E1%82%90%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%9B%E1%80%AC%E1%80%99%E1%80%AE%E1%80%B8%E1%80%95%E1%80%B6%E1%80%AF%E1%80%B8%E1%80%95%E1%80%BA%E1%80%B6%E1%80%95%E1%80%8A%E1%80%AC%E1%82%90%E1%80%BD%E1%80%84%E1%80%B9%E1%80%99%E1%80%BA%E1%80%AC%E1%80%B8%E1%80%A1%E1%80%9E%E1%80%84%E1%80%B9%E1%80%B8-175198886153815/?fref=ts">ေတာင္ႀကီးၿမိဳ႕ရိုးရာမီးပံုးပ်ံပညာရွင္မ်ားအသင္း Page</a></p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#">©2015 • ေတာင္ႀကီးတန္ေဆာင္တိုင္မီးပုံးပ်ံခ်စ္သူမ်ား</a></li>
+		</ul>
+	</div>
+<h4 style="display:none;">Footer</h4></div></div>
+</body>
+</html>
